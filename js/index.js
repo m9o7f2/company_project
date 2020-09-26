@@ -8,6 +8,11 @@
 // }
 // on_load()
 
+var scroll = new SmoothScroll('*[href*="#"]',{
+    speed: 700,
+    offset: 150
+});
+
 window.onload = function () {
     if(document.body.classList.contains("home")){
          new Splide('.splide', {type:'loop',perPage:window.innerWidth < 990? 1 : 3 ,focus: 'center',}).mount()
@@ -23,10 +28,6 @@ function wow_js () {
           offset:       0,          // distance to the element when triggering the animation (default is 0)
           mobile:       true,       // trigger animations on mobile devices (default is true)
           live:         true,       // act on asynchronously loaded content (default is true)
-          callback:     function(box) {
-            // the callback is fired every time an animation is started
-            // the argument that is passed in is the DOM node being animated
-          },
           scrollContainer: null,    // optional scroll container selector, otherwise use window,
           resetAnimation: true,     // reset animation on end (default is true)
         }
@@ -35,6 +36,14 @@ function wow_js () {
 }
 wow_js ()
 
+//bading top
+
+function paddingT(){
+    let fixer = document.querySelector(".fixer").offsetHeight;
+
+    document.body.style.paddingTop = fixer + "px";
+}
+paddingT()
 //change img-header
 function header_img () {
     var header = document.querySelector("header");
@@ -48,7 +57,6 @@ function header_img () {
     }
 }
 header_img ()
-
 //add animation-class
 function add_anmation() {
     let serv = document.querySelectorAll(".serv");
@@ -63,3 +71,16 @@ function add_anmation() {
     }
 }
 add_anmation()
+
+// up show
+
+function up(){
+    window.onscroll = function(){
+        if(window.scrollY > 500){
+            document.querySelector(".top").style.opacity = "1"
+        }else{
+            document.querySelector(".top").style.opacity = "0"
+        }
+    }
+}
+up()
