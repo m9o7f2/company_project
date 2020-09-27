@@ -1,13 +1,4 @@
 
-//loading overLay
-// function on_load() {
-//     window.onload = function () {
-//         document.querySelector(".loader").style.display = "none";
-//         document.body.style.overflowY = "scroll";
-//     }
-// }
-// on_load()
-
 var scroll = new SmoothScroll('*[href*="#"]',{
     speed: 700,
     offset: 150
@@ -49,11 +40,11 @@ function header_img () {
     var header = document.querySelector("header");
     if(header.classList.contains("bg-ch")){
         setInterval(function(){
-            let im = ["url('img/hero.webp')","url('img/hero2.jpg')","url('img/3.jpg')","url('img/4.jpg')","url('img/5.jpg')","url('img/6.jpg')"];
+            let im = ["url('img/header-img/01.jpg')","url('img/header-img/02.jpg')","url('img/header-img/03.jpg')","url('img/header-img/04.jpg')"];
             let I = Math.floor(Math.random() * 6);
             let finalI = im[I];
             header.style.backgroundImage = finalI
-        },5000)
+        },30000)
     }
 }
 header_img ()

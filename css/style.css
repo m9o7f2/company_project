@@ -225,12 +225,15 @@ footer .footer-contact span {
       width: auto; } }
 
 .our-serves .serves-card .card {
+  min-height: 400px;
   transition: all 1s; }
   .our-serves .serves-card .card .card-title {
     font-weight: 600; }
   .our-serves .serves-card .card:hover {
     transform: scale(1.1);
     z-index: 1; }
+  .our-serves .serves-card .card p {
+    text-align: justify; }
 
 .work h2 {
   font-weight: 600;
@@ -376,6 +379,9 @@ footer .footer-contact span {
 .clints .splide {
   text-align: center !important; }
 
+.clints .splide__pagination {
+  display: none !important; }
+
 .join {
   background-color: #096BD8; }
   .join h2 {
@@ -421,12 +427,16 @@ footer .footer-contact span {
     z-index: 1; }
     .com-serves .serv .img-div img.first:hover {
       opacity: 0; }
+  .com-serves .serv .serve-cont h2 {
+    font-weight: 600;
+    color: #096BD8; }
   .com-serves .serv .serve-cont p {
-    font-size: 20px !important; }
+    font-size: 20px !important;
+    text-align: justify; }
 
 .serves header {
-  background-image: url("../img/1.jpg");
   background-position: center;
+  background-size: cover;
   height: 400px; }
 
 .content h2 {
