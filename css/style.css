@@ -161,6 +161,7 @@ footer .footer-contact span {
       line-height: 40px; } }
 
 .home header {
+  background-image: url("../img/header-img/01.jpg");
   background-size: cover;
   z-index: 100;
   transition: all 1s;

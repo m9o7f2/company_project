@@ -40,7 +40,7 @@ function header_img () {
     var header = document.querySelector("header");
     if(header.classList.contains("bg-ch")){
         setInterval(function(){
-            let im = ["url('img/header-img/01.jpg')","url('img/header-img/02.jpg')","url('img/header-img/03.jpg')","url('img/header-img/04.jpg')"];
+            let im = ["url('img/header-img/01.jpg')","url('img/header-img/02.jpg')","url('img/header-img/03.jpg')"];
             let I = Math.floor(Math.random() * 6);
             let finalI = im[I];
             header.style.backgroundImage = finalI
