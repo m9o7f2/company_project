@@ -90,6 +90,8 @@ nav .navbar-collapse {
     @media (max-width: 990px) {
       nav .navbar-collapse ul > li {
         margin-bottom: 15px; } }
+    nav .navbar-collapse ul .dropdown-menu {
+      left: -150px; }
 
 footer .info p {
   width: 85%; }
