@@ -74,4 +74,18 @@ function up(){
         }
     }
 }
-up()
+up();
+
+//page translate section
+function trans (){
+    let trans = document.querySelector(".trans");
+    trans.onclick = function(){
+        document.body.parentElement.style.direction = "rtl"; 
+        document.querySelectorAll(".text-right").forEach(el => {
+            el.style.textAlign = "left !important";
+        })
+    }
+}
+trans ()
+
+//translate section js-object

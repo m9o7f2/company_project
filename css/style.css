@@ -265,7 +265,9 @@ footer .footer-contact span {
 
 .work .card p {
   margin-bottom: 1.8em;
-  font-size: 18px; }
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 10px; }
 
 .work .card .front,
 .work .card .back {
@@ -295,7 +297,8 @@ footer .footer-contact span {
   text-decoration: none;
   border-radius: 1px;
   font-size: 0.9em;
-  transition: all 0.2s ease 0s; }
+  transition: all 0.2s ease 0s;
+  display: none; }
 
 .work .card .back a:hover {
   background-color: #096BD8 !important;
@@ -464,10 +467,13 @@ footer .footer-contact span {
 
 .our-work-section figure figcaption {
   background-color: #096BD8; }
+  .our-work-section figure figcaption p {
+    text-align: justify; }
   .our-work-section figure figcaption a {
     position: static;
     font-weight: 600;
-    transition: all 1s; }
+    transition: all 1s;
+    display: none; }
     .our-work-section figure figcaption a:hover {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
       color: #fff !important;
