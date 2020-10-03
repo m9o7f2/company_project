@@ -58,6 +58,9 @@ body {
   .my-center {
     text-align: center !important; } }
 
+.transl {
+  transform: translate(4293.23px, 0px) !important; }
+
 .fixer {
   z-index: 99999;
   top: 0px;
@@ -297,8 +300,7 @@ footer .footer-contact span {
   text-decoration: none;
   border-radius: 1px;
   font-size: 0.9em;
-  transition: all 0.2s ease 0s;
-  display: none; }
+  transition: all 0.2s ease 0s; }
 
 .work .card .back a:hover {
   background-color: #096BD8 !important;
@@ -396,6 +398,8 @@ footer .footer-contact span {
     @media (max-width: 990px) {
       .join h2 {
         width: auto; } }
+  .join .tes {
+    text-align: right; }
   .join a {
     transition: all 1s; }
     .join a:hover {
@@ -472,8 +476,7 @@ footer .footer-contact span {
   .our-work-section figure figcaption a {
     position: static;
     font-weight: 600;
-    transition: all 1s;
-    display: none; }
+    transition: all 1s; }
     .our-work-section figure figcaption a:hover {
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
       color: #fff !important;
