@@ -483,8 +483,9 @@ footer .footer-contact span {
       background-color: #096BD8 !important; }
 
 .one-work header {
-  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 400px; }
 
 .work-info h2 {
